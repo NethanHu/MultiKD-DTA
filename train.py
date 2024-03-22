@@ -45,9 +45,9 @@ processed_test_file_path = 'data/processed/' + dataset + '_test.pt'
 
 console.log('Loading ESM-2 (Meta protein big model) from disk...')
 if dataset == 'davis':
-    z = np.load('./data/davis/davis.npz', allow_pickle=True)
+    z = np.load('./davis.npz', allow_pickle=True)
 else:
-    z = np.load('./data/kiba/kiba.npz', allow_pickle=True)
+    z = np.load('./.npz', allow_pickle=True)
 z = z['dict'][()]
 
 
