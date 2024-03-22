@@ -86,9 +86,10 @@ class DepthCNN(nn.Module):
     def __init__(self, input_dim, output_dim):
         super(DepthCNN, self).__init__()
         self.affine_in = Affine(input_dim)
-        self.conv1 = Conv1d(input_dim, output_dim, kernel_size=31, padding=15)
-        self.conv2 = Conv1d(output_dim, output_dim, kernel_size=63, padding=31)
-        self.conv3 = Conv1d(output_dim, output_dim, kernel_size=15, padding=7)
+        # These three Conv-Kernel must be big and vast
+        self.conv1 = Conv1d(input_dim, output_dim, kernel_size=15, padding=7)
+        self.conv2 = Conv1d(output_dim, output_dim, kernel_size=31, padding=15)
+        self.conv3 = Conv1d(output_dim, output_dim, kernel_size=7, padding=3)
         self.bn1 = nn.BatchNorm1d(output_dim)
         self.bn2 = nn.BatchNorm1d(output_dim)
         self.bn3 = nn.BatchNorm1d(output_dim)
