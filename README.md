@@ -38,7 +38,8 @@ This would consume most of the time, as it involves downloading the parameters o
 #### Convert SMILES to Graph
 
 ```bash
-python generate_drug_profile.py
+1. conda install pyg -c pyg
+2. python generate_drug_profile.py
 ```
 
 #### File Structure
