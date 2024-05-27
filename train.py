@@ -1,4 +1,5 @@
 import sys
+import os
 
 import torch
 import torch.nn as nn
@@ -140,6 +141,8 @@ for epoch in range(NUM_EPOCHS):
     if metrics['ci'] > best_ci:
         best_ci = metrics['ci']
         console.log('CI has been improved... Saving model to file...')
+        if os.path.exists('model/') == False:
+            os.mkdir('model')
         torch.save(model.state_dict(), 'model/{}_model.pt'.format(dataset))
     tok = dt.now()
     print('Training time of this epoch -> {}s'.format((tok - tik).seconds))
