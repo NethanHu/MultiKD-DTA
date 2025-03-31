@@ -124,6 +124,7 @@ You can change the parameters in the `train.py` and `ISBRA.py` file.
 
 ```markdown
 [📄 View on Springer](https://doi.org/10.1007/s12539-025-00697-4)
+```
 
 ```bibtex
 @article{hu2025multikd,
@@ -136,7 +137,4 @@ You can change the parameters in the `train.py` and `ISBRA.py` file.
   doi       = {10.1007/s12539-025-00697-4},
   url       = {https://doi.org/10.1007/s12539-025-00697-4}
 }
-
-
-
-
+```
