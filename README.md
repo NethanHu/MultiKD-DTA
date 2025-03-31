@@ -120,6 +120,23 @@ python train.py
 You can change the parameters in the `train.py` and `ISBRA.py` file.
 
 
+## 📖 Citation
+
+```markdown
+[📄 View on Springer](https://doi.org/10.1007/s12539-025-00697-4)
+
+```bibtex
+@article{hu2025multikd,
+  title     = {MultiKD-DTA: Enhancing Drug-Target Affinity Prediction Through Multiscale Feature Extraction},
+  author    = {Hu, Riqian and Ge, Ruiquan and Deng, Guojian and Fan, Jin and Tang, Bowen and Wang, Changmiao},
+  journal   = {Interdisciplinary Sciences: Computational Life Sciences},
+  pages     = {1--11},
+  year      = {2025},
+  publisher = {Springer},
+  doi       = {10.1007/s12539-025-00697-4},
+  url       = {https://doi.org/10.1007/s12539-025-00697-4}
+}
+
 
 
 
